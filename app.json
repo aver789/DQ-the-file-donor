@@ -1,7 +1,7 @@
 {
     "name": "DQ-The-File-Donor",
     "description": "When you going to send file on telegram channel this bot will save that in database, So you can search that easily in inline mode",
-    "stack": "worker",
+    "stack": "container",
     "keywords": [
       "telegram",
       "auto-filter",
@@ -73,7 +73,7 @@
         "url": "heroku/python"
     }],
     "formation": {
-        "worker": "eco" {
+        "worker": {
             "quantity": 1,
             "size": "eco"
         }
