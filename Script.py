@@ -180,7 +180,6 @@ Nᴀᴍᴇ - {}"""
 
     CAPTION = """
 <b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
-
 <b>
 ╭─────── • ◆ • ───────╮
 🔅 ᴄʜᴀɴɴᴇʟ :  <a href="https://t.me/Classroom_lecturess">Tᴏᴜᴄʜ</a>
