@@ -22,16 +22,16 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-                    InlineKeyboardButton('❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘs ❄️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('💚 Jᴏɪɴ Mᴀɪɴ Cʜᴀɴɴᴇʟ 💚', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton('🤖 Bᴏᴛ Oᴡɴᴇʀ 🥷', callback_data="owner_info"),
                     InlineKeyboardButton('🛡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🛡', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('🆘 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🔮 Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('💜 Bᴀcᴋᴜᴘ Cʜᴀɴɴᴇʟ 💜', url=f'http://t.me/Classroom_lecturess')
                 ],[
-                    InlineKeyboardButton('💚 Jᴏɪɴ Mᴀɪɴ Cʜᴀɴɴᴇʟ 💚', url=CHNL_LNK)
+                    InlineKeyboardButton('❄️ ᴜꜱᴇ ᴍᴇ ᴛᴏ ꜱᴛᴏʀᴇ ꜰɪʟᴇ ᴀɴᴅ ꜱʜᴀʀᴇ ❄️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
@@ -46,16 +46,16 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-                    InlineKeyboardButton('❄️ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ❄️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('💚 Jᴏɪɴ Mᴀɪɴ Cʜᴀɴɴᴇʟ 💚', url=CHNL_LNK)
                 ],[
                     InlineKeyboardButton('🤖 Bᴏᴛ Oᴡɴᴇʀ 🥷', callback_data="owner_info"),
                     InlineKeyboardButton('🛡 Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ 🛡', url=GRP_LNK)
                 ],[
-                    InlineKeyboardButton('🆘 Hᴇʟᴘ', callback_data='help'),
+                    InlineKeyboardButton('⚠️ Hᴇʟᴘ', callback_data='help'),
                     InlineKeyboardButton('🔮 Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('💜 Bᴀcᴋᴜᴘ Cʜᴀɴɴᴇʟ 💜', url=f'http://t.me/Classroom_lecturess')
                 ],[
-                    InlineKeyboardButton('💚 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ 💚', url=CHNL_LNK)
+                    InlineKeyboardButton('❄️ ᴜꜱᴇ ᴍᴇ ᴛᴏ ꜱᴛᴏʀᴇ ꜰɪʟᴇ ᴀɴᴅ ꜱʜᴀʀᴇ ❄️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
@@ -83,12 +83,12 @@ async def start(client, message):
             try:
                 kk, file_id = message.command[1].split("_", 1)
                 pre = 'checksubp' if kk == 'filep' else 'checksub' 
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
+                btn.append([InlineKeyboardButton("🔄 Tʀʏ Aɢᴀɪɴ", callback_data=f"{pre}#{file_id}")])
             except (IndexError, ValueError):
-                btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
+                btn.append([InlineKeyboardButton("🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**You are not in our Back-up channel given below so you don't get the lecture ...\n\nIf you want the lecture file, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the lecture files...**",
+            text="**You are not in our Back-up channel given below so you don't get the files ...\n\nIf you want the files, click on the '🍿ᴊᴏɪɴ ᴏᴜʀ ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ🍿' button below and join our back-up channel, then click on the '🔄 Try Again' button below...\n\nThen you will get the lecture files...**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -158,7 +158,7 @@ async def start(client, message):
                           InlineKeyboardButton('🛡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ🛡', url=GRP_LNK),
                           InlineKeyboardButton('💚Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ💚', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("🤖 Bᴏᴛ Oᴡɴᴇʀ 🥷", url="t.me/Amit_0211")
+                          InlineKeyboardButton("🤖 Bᴏᴛ Oᴡɴᴇʀ 🥷", url="t.me/Amit_vbot")
                          ]
                         ]
                     )
@@ -177,7 +177,7 @@ async def start(client, message):
                           InlineKeyboardButton('🛡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ🛡', url=GRP_LNK),
                           InlineKeyboardButton('💚Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ💚', url=CHNL_LNK)
                        ],[
-                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_0211")
+                          InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_vbot")
                          ]
                         ]
                     )
@@ -248,7 +248,7 @@ async def start(client, message):
                       InlineKeyboardButton('🛡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ🛡', url=GRP_LNK),
                       InlineKeyboardButton('💚Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ💚', url=CHNL_LNK)
                    ],[
-                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_0211")
+                      InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_vbot")
                      ]
                     ]
                 )
@@ -291,7 +291,7 @@ async def start(client, message):
               InlineKeyboardButton('🛡Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ🛡', url=GRP_LNK),
               InlineKeyboardButton('💚Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ💚', url=CHNL_LNK)
            ],[
-              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_0211")
+              InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/Amit_vbot")
              ]
             ]
         )
