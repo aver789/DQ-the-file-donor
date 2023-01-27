@@ -179,7 +179,7 @@ Nᴀᴍᴇ - {}"""
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
     CAPTION = """
-<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> <code>{file_name}</code>
+<b>📂 Fɪʟᴇ ɴᴀᴍᴇ : </b> {file_name}
 <b>
 ╭─────── • ◆ • ───────╮
 🔅 ᴄʜᴀɴɴᴇʟ :  <a href="https://t.me/Classroom_lecturess">Tᴏᴜᴄʜ</a>
