@@ -1,6 +1,6 @@
 class script(object):
-    START_TXT = """<b>Hᴇʟʟᴏ {},
-Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ LECTURE, Jᴜsᴛ Jᴏɪɴ Cʜᴇᴄᴋʟɪsᴛ Cʜᴀɴɴᴇʟ 😍</b>"""
+    START_TXT = """<b>Hᴇʟʟᴏ 🖤 {}💚,
+Mʏ Nᴀᴍᴇ Is <a href=https://t.me/{}>{}</a>, I Cᴀɴ Pʀᴏᴠɪᴅᴇ ꜰɪʟᴇꜱ, Jᴜsᴛ Jᴏɪɴ Yᴏᴜʀ Aᴅᴍɪɴ Cʜᴀɴɴᴇʟ 😍</b>"""
 
     HELP_TXT = """<b>Hᴇʏ {}
 Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
@@ -134,7 +134,7 @@ Nᴀᴍᴇ - {}"""
 <b>💚───[ ᴏᴡɴᴇʀ ᴅᴇᴛᴀɪʟꜱ ]───💚
     
 • ꜰᴜʟʟ ɴᴀᴍᴇ : ★彡[ᴀᴍɪᴛ]彡★
-• ᴜꜱᴇʀɴᴀᴍᴇ : @Amit_0211
+• ᴄᴏɴᴛᴀᴄᴛ : @Amit_vbot
 • ᴘᴇʀᴍᴀɴᴇɴᴛ ᴅᴍ ʟɪɴᴋ : <a href='t.me/Amit_0211'>ᴄʟɪᴄᴋ ʜᴇʀᴇ</a></b>"""
 
     REQINFO = """
