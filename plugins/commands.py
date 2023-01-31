@@ -31,7 +31,7 @@ async def start(client, message):
                     InlineKeyboardButton('🔮 Aʙᴏᴜᴛ', callback_data='about'),
                     InlineKeyboardButton('💜 Bᴀcᴋᴜᴘ Cʜᴀɴɴᴇʟ 💜', url=f'http://t.me/Classroom_lecturess')
                 ],[
-                    InlineKeyboardButton('❄️ ᴜꜱᴇ ᴍᴇ ᴛᴏ ꜱᴛᴏʀᴇ ꜰɪʟᴇ ᴀɴᴅ ꜱʜᴀʀᴇ ❄️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+                    InlineKeyboardButton('❄️ ᴜꜱᴇ ᴍᴇ ᴛᴏ ꜱᴛᴏʀᴇ ꜰɪʟᴇ ᴀɴᴅ ꜱʜᴀʀᴇ ❄️', url=f'http:s//t.me/{temp.U_NAME}?startgroup=true')
                   ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(script.START_TXT.format(message.from_user.mention if message.from_user else message.chat.title, temp.U_NAME, temp.B_NAME), reply_markup=reply_markup)
